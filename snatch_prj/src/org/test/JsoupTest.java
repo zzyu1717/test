@@ -33,7 +33,7 @@ public class JsoupTest {
 			Document  doc = open(SITE_URL);
 			Elements links = doc.select("tr.provincetr").select("a");
 			RegionEntry province = null;
-			for (int i = 15; i < links.size(); i++) {
+			for (int i = 0; i < links.size(); i++) {
 				Element e = links.get(i);
 				province = new RegionEntry();
 				String href = e.attr("href"); // 14.html
